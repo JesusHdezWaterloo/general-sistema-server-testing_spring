@@ -1,0 +1,39 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+    id 'war'
+    id 'application'
+}
+
+group = 'com.example'
+mainClassName = 'com.jhw.sistema.server.testing_spring.Application'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+war {
+    baseName = 'spring'
+    version = '0.1.0'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    
+    /*implementation ('org.springframework.boot:spring-boot-starter-data-redis'){
+    exclude group: 'io.lettuce', module: 'lettuce-core'
+    }
+    implementation 'redis.clients:jedis'*/
+    
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+}
+
+test {
+    useJUnitPlatform()
+}
