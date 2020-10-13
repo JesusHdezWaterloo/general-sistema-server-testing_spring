@@ -7,13 +7,13 @@ project(':example-spring-a-server').projectDir = "E:\\Trabajos\\Projects\\GIT Pr
 include ':clean-core-full'
 project(':clean-core-full').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\clean-core-full" as File
 
-include ':clean-swing'
-project(':clean-swing').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\clean-swing" as File
-
 include ':utils-core'
 project(':utils-core').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\utils-core" as File
 
 include ':example-spring-a-standard'
 project(':example-spring-a-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\example-spring-a-standard" as File
 
+
+include ':utils-spring'
+project(':utils-spring').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\utils-spring" as File
 
