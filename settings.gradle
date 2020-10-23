@@ -17,3 +17,6 @@ project(':example-spring-a-standard').projectDir = "E:\\Trabajos\\Projects\\GIT 
 include ':utils-spring'
 project(':utils-spring').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\utils-spring" as File
 
+
+include ':module-util-mysql'
+project(':module-util-mysql').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-util-mysql" as File
