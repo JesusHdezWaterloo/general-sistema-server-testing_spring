@@ -1,6 +1,6 @@
 package com.jhw.sistema.server.testing_spring;
 
-import com.jhw.example.spring_a.rest.A_SpringA;
+import com.jhw.module.gestion.contabilidad.rest.A_ModuleGestionContabilidadEmpresarial;
 import com.jhw.module.util.mysql.services.MySQLHandler;
 import javax.annotation.PreDestroy;
 import org.springframework.boot.SpringApplication;
@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication/*(scanBasePackages = {"com.jhw.example.spring_a.rest"})*/
 @ComponentScan(basePackages = {
-    A_SpringA.BASE_PACKAGE
+    A_ModuleGestionContabilidadEmpresarial.BASE_PACKAGE
 })
 public class Application extends SpringBootServletInitializer {
 

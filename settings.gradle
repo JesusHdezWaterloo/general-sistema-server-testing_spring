@@ -1,18 +1,16 @@
 rootProject.name = 'general-sistema-server-testing_spring'
 
-include ':example-spring-a-server'
-project(':example-spring-a-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\example-spring-a-server" as File
-
-
 include ':clean-core-full'
 project(':clean-core-full').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\clean-core-full" as File
 
 include ':utils-core'
 project(':utils-core').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\utils-core" as File
 
-include ':example-spring-a-standard'
-project(':example-spring-a-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\example-spring-a-standard" as File
+include ':module-gestion-contabilidad_empresarial'
+project(':module-gestion-contabilidad_empresarial').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-contabilidad_empresarial" as File
 
+include ':module-gestion-contabilidad_empresarial-standard'
+project(':module-gestion-contabilidad_empresarial-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-contabilidad_empresarial-standard" as File
 
 include ':utils-spring'
 project(':utils-spring').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\utils-spring" as File
