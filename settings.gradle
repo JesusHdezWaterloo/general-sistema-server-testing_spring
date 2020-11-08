@@ -6,8 +6,8 @@ project(':clean-core-full').projectDir = "E:\\Trabajos\\Projects\\GIT Projects G
 include ':utils-core'
 project(':utils-core').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\utils-core" as File
 
-include ':module-gestion-contabilidad_empresarial'
-project(':module-gestion-contabilidad_empresarial').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-contabilidad_empresarial" as File
+include ':module-gestion-contabilidad_empresarial-server'
+project(':module-gestion-contabilidad_empresarial-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-contabilidad_empresarial-server" as File
 
 include ':module-gestion-contabilidad_empresarial-standard'
 project(':module-gestion-contabilidad_empresarial-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-contabilidad_empresarial-standard" as File

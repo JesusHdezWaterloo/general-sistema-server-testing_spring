@@ -25,5 +25,5 @@ dependencies {
     
     implementation project(':utils-core')
     implementation project(':module-util-mysql')
-    implementation project(':module-gestion-contabilidad_empresarial')
+    implementation project(':module-gestion-contabilidad_empresarial-server')
 }
