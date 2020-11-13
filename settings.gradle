@@ -23,3 +23,9 @@ project(':module-gestion-gastos_administrativos-server').projectDir = "E:\\Traba
 
 include ':module-gestion-gastos_administrativos-standard'
 project(':module-gestion-gastos_administrativos-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-gastos_administrativos-standard" as File
+
+include ':module-admin-kanban-server'
+project(':module-admin-kanban-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-admin-kanban-server" as File
+
+include ':module-admin-kanban-standard'
+project(':module-admin-kanban-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-admin-kanban-standard" as File

@@ -1,5 +1,6 @@
 package com.jhw.sistema.server.testing_spring;
 
+import com.jhw.module.admin.kanban.rest.A_ModuleAdminKanban;
 import com.jhw.module.gestion.contabilidad.rest.A_ModuleGestionContabilidadEmpresarial;
 import com.jhw.module.gestion.gastos.rest.A_ModuleGestionGastos;
 import com.jhw.module.util.mysql.services.MySQLHandler;
@@ -13,7 +14,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication/*(scanBasePackages = {"com.jhw.example.spring_a.rest"})*/
 @ComponentScan(basePackages = {
     A_ModuleGestionContabilidadEmpresarial.BASE_PACKAGE,
-    A_ModuleGestionGastos.BASE_PACKAGE
+    A_ModuleGestionGastos.BASE_PACKAGE,
+    A_ModuleAdminKanban.BASE_PACKAGE
 })
 public class Application extends SpringBootServletInitializer {
 
