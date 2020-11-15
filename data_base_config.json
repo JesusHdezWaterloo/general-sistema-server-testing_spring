@@ -5,6 +5,6 @@
   "dbSaveFolder" : "salvas_bd",
   "user" : "root",
   "pass" : "",
-  "port" : "7733",
+  "port" : 7733,
   "ip" : "localhost"
 }
