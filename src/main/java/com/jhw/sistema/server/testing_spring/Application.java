@@ -1,7 +1,10 @@
 package com.jhw.sistema.server.testing_spring;
 
 import com.jhw.module.admin.kanban.rest.A_ModuleAdminKanban;
+import com.jhw.module.gestion.contabilidad.repo.utils.ResourcesContabilidad;
+import com.jhw.module.admin.kanban.repo.utils.ResourcesKanban;
 import com.jhw.module.gestion.contabilidad.rest.A_ModuleGestionContabilidadEmpresarial;
+import com.jhw.module.gestion.gastos.repo.utils.ResourcesGastos;
 import com.jhw.module.gestion.gastos.rest.A_ModuleGestionGastos;
 import com.jhw.module.util.mysql.services.MySQLHandler;
 import javax.annotation.PostConstruct;
@@ -23,6 +26,15 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(value = "/admin")
 public class Application extends SpringBootServletInitializer {
+
+    /**
+     * Agregar el nombre de las BD a salvar
+     */
+    private static void save() {
+        MySQLHandler.save(ResourcesContabilidad.SCHEMA);
+        MySQLHandler.save(ResourcesGastos.SCHEMA);
+        MySQLHandler.save(ResourcesKanban.SCHEMA);
+    }
 
     private static ConfigurableApplicationContext context;
 
@@ -59,6 +71,7 @@ public class Application extends SpringBootServletInitializer {
     @PreDestroy
     public void onExit() {
         System.out.println("onExit");
+        save();
         MySQLHandler.close();
         System.out.println("onExit finalizado");
     }
