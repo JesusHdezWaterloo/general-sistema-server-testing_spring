@@ -23,6 +23,10 @@ dependencies {
         
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
     
+    implementation project(':utils-core')
     implementation project(':module-util-mysql')
-    implementation project(':example-spring-a-server')
+    
+    implementation project(':module-gestion-contabilidad_empresarial-server')
+    implementation project(':module-gestion-gastos_administrativos-server')
+    implementation project(':module-admin-kanban-server')
 }
