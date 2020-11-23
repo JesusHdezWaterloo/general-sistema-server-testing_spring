@@ -1,5 +1,5 @@
 {
-  "startMysqlService" : true,
+  "startMysqlService" : false,
   "batDumpFolder" : "E:\\xampp\\mysql\\bin\\mysqldump",
   "batStart" : "E:\\xampp\\mysql_start.bat",
   "batStop" : "E:\\xampp\\mysql_stop.bat",
