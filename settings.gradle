@@ -30,8 +30,6 @@ project(':module-admin-kanban-server').projectDir = "E:\\Trabajos\\Projects\\GIT
 include ':module-admin-kanban-standard'
 project(':module-admin-kanban-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-admin-kanban-standard" as File
 
-
-
 include ':module-admin-seguridad-standard'
 project(':module-admin-seguridad-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-admin-seguridad-standard" as File
 
