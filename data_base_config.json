@@ -1,6 +1,8 @@
 {
   "startMysqlService" : false,
-  "batchFolder" : "E:\\xampp",
+  "batDumpFolder" : "E:\\xampp\\mysql\\bin\\mysqldump",
+  "batStart" : "E:\\xampp\\mysql_start.bat",
+  "batStop" : "E:\\xampp\\mysql_stop.bat",
   "saveDbAfterClose" : true,
   "dbSaveFolder" : "salvas_bd",
   "user" : "root",

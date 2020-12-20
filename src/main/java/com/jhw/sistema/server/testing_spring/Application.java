@@ -3,6 +3,8 @@ package com.jhw.sistema.server.testing_spring;
 import com.jhw.module.admin.kanban.rest.A_ModuleAdminKanban;
 import com.jhw.module.gestion.contabilidad.repo.utils.ResourcesContabilidad;
 import com.jhw.module.admin.kanban.repo.utils.ResourcesKanban;
+import com.jhw.module.admin.seguridad.rest.A_ModuleAdminSeguridad;
+import com.jhw.module.authorization_server.oauth2.A_ModuleOAuth2;
 import com.jhw.module.gestion.contabilidad.rest.A_ModuleGestionContabilidadEmpresarial;
 import com.jhw.module.gestion.gastos.repo.utils.ResourcesGastos;
 import com.jhw.module.gestion.gastos.rest.A_ModuleGestionGastos;
@@ -21,7 +23,9 @@ import org.springframework.web.bind.annotation.*;
 @ComponentScan(basePackages = {
     A_ModuleGestionContabilidadEmpresarial.BASE_PACKAGE,
     A_ModuleGestionGastos.BASE_PACKAGE,
-    A_ModuleAdminKanban.BASE_PACKAGE
+    A_ModuleAdminKanban.BASE_PACKAGE,
+    A_ModuleOAuth2.BASE_PACKAGE,
+    A_ModuleAdminSeguridad.BASE_PACKAGE,
 })
 @RestController
 @RequestMapping(value = "/admin")
