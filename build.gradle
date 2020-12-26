@@ -47,8 +47,8 @@ dependencies {
     implementation project(':utils-core')
     implementation project(':module-util-mysql')
     
-    //implementation project(':module-gestion-contabilidad_empresarial-server')
-    //implementation project(':module-gestion-gastos_administrativos-server')
+    implementation project(':module-gestion-contabilidad_empresarial-server')
+    implementation project(':module-gestion-gastos_administrativos-server')
     implementation project(':module-admin-kanban-server')
     implementation project(':module-util-licence-server')
     

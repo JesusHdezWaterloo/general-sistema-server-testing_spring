@@ -11,7 +11,7 @@ project(':utils-spring').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Grad
 
 include ':module-util-mysql'
 project(':module-util-mysql').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-util-mysql" as File
-/*
+
 include ':module-gestion-contabilidad_empresarial-server'
 project(':module-gestion-contabilidad_empresarial-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-contabilidad_empresarial-server" as File
 
@@ -23,7 +23,7 @@ project(':module-gestion-gastos_administrativos-server').projectDir = "E:\\Traba
 
 include ':module-gestion-gastos_administrativos-standard'
 project(':module-gestion-gastos_administrativos-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-gastos_administrativos-standard" as File
-*/
+
 include ':module-admin-kanban-server'
 project(':module-admin-kanban-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-admin-kanban-server" as File
 
