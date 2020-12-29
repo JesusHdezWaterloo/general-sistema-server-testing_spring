@@ -3,14 +3,11 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
     id 'java'
     id 'war'
-    //id 'application'
 }
 
 group = 'com.example'
 
-version = '2.0.0.SNAPSHOT.20201219'
-
-//mainClassName = 'com.jhw.sistema.server.testing_spring.Application'
+version = '2.1.0.SNAPSHOT.20201228'
 
 bootWar{
     archiveFileName = "test_spring.war"
@@ -50,6 +47,7 @@ dependencies {
     implementation project(':module-gestion-contabilidad_empresarial-server')
     implementation project(':module-gestion-gastos_administrativos-server')
     implementation project(':module-admin-kanban-server')
+    implementation project(':module-util-licence-server')
     
     implementation project(':module-admin-seguridad-server')
     implementation project(':module-authorization_server-oauth2')
