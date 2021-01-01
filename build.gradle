@@ -5,9 +5,9 @@ plugins {
     id 'war'
 }
 
-group = 'com.example'
+group = 'com.root101.sistema'
 
-version = '2.1.0.SNAPSHOT.20201228'
+version = '2.9.9.SNAPSHOT.20210101'
 
 bootWar{
     archiveFileName = "test_spring.war"
@@ -47,7 +47,7 @@ dependencies {
     implementation project(':module-gestion-contabilidad_empresarial-server')
     implementation project(':module-gestion-gastos_administrativos-server')
     implementation project(':module-admin-kanban-server')
-    implementation project(':module-util-licence-server')
+    implementation project(':module-control-licence-server')
     
     implementation project(':module-admin-seguridad-server')
     implementation project(':module-authorization_server-oauth2')
