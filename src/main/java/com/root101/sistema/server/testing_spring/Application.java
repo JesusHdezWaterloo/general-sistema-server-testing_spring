@@ -17,9 +17,9 @@
 package com.root101.sistema.server.testing_spring;
 
 import com.jhw.module.authorization_server.oauth2.A_ModuleOAuth2;
-import com.root101.module.admin.seguridad.rest.A_ModuleAdminSeguridad;
+import com.root101.module.admin.seguridad.rest.A_ModuleAdminSeguridadRESTConfig;
 import com.root101.module.gestion.contabilidad.repo.utils.ResourcesContabilidad;
-import com.root101.module.gestion.contabilidad.rest.A_ModuleGestionContabilidadEmpresarial;
+import com.root101.module.gestion.contabilidad.rest.A_ModuleGestionContabilidadRESTConfig;
 import com.jhw.module.util.mysql.services.MySQLHandler;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -30,11 +30,11 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.*;
-import com.root101.module.control.licence.rest.A_ModuleUtilLicence;
+import com.root101.module.control.licence.rest.A_ModuleUtilLicenceRESTConfig;
 import com.root101.module.admin.kanban.repo.utils.ResourcesKanban;
-import com.root101.module.admin.kanban.rest.A_ModuleAdminKanban;
+import com.root101.module.admin.kanban.rest.A_ModuleAdminKanbanRESTConfig;
 import com.root101.module.gestion.gastos.repo.utils.ResourcesGastos;
-import com.root101.module.gestion.gastos.rest.A_ModuleGestionGastos;
+import com.root101.module.gestion.gastos.rest.A_ModuleGestionGastosRESTConfig;
 
 /**
  *
@@ -43,12 +43,12 @@ import com.root101.module.gestion.gastos.rest.A_ModuleGestionGastos;
  */
 @SpringBootApplication
 @ComponentScan(basePackages = {
-    A_ModuleGestionContabilidadEmpresarial.BASE_PACKAGE,
-    A_ModuleGestionGastos.BASE_PACKAGE,
-    A_ModuleAdminKanban.BASE_PACKAGE,
+    A_ModuleGestionContabilidadRESTConfig.BASE_PACKAGE,
+    A_ModuleGestionGastosRESTConfig.BASE_PACKAGE,
+    A_ModuleAdminKanbanRESTConfig.BASE_PACKAGE,
     A_ModuleOAuth2.BASE_PACKAGE,
-    A_ModuleAdminSeguridad.BASE_PACKAGE,
-    A_ModuleUtilLicence.BASE_PACKAGE,})
+    A_ModuleAdminSeguridadRESTConfig.BASE_PACKAGE,
+    A_ModuleUtilLicenceRESTConfig.BASE_PACKAGE,})
 @RestController
 @RequestMapping(value = "/admin")
 public class Application extends SpringBootServletInitializer {
