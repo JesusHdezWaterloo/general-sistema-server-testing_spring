@@ -35,6 +35,7 @@ import com.root101.module.admin.kanban.repo.utils.ResourcesKanban;
 import com.root101.module.admin.kanban.rest.A_ModuleAdminKanbanRESTConfig;
 import com.root101.module.gestion.gastos.repo.utils.ResourcesGastos;
 import com.root101.module.gestion.gastos.rest.A_ModuleGestionGastosRESTConfig;
+import com.root101.module.gestion.geografia.rest.A_ModuleGestionGeografiaRESTConfig;
 
 /**
  *
@@ -48,7 +49,9 @@ import com.root101.module.gestion.gastos.rest.A_ModuleGestionGastosRESTConfig;
     A_ModuleAdminKanbanRESTConfig.BASE_PACKAGE,
     A_ModuleOAuth2.BASE_PACKAGE,
     A_ModuleAdminSeguridadRESTConfig.BASE_PACKAGE,
-    A_ModuleUtilLicenceRESTConfig.BASE_PACKAGE,})
+    A_ModuleUtilLicenceRESTConfig.BASE_PACKAGE,
+    A_ModuleGestionGeografiaRESTConfig.BASE_PACKAGE,
+})
 @RestController
 @RequestMapping(value = "/admin")
 public class Application extends SpringBootServletInitializer {
