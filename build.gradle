@@ -7,7 +7,7 @@ plugins {
 
 group = 'com.root101.sistema'
 
-version = '2.9.9.SNAPSHOT.20210101'
+version = '3.0.0.SNAPSHOT.20210109'
 
 bootWar{
     archiveFileName = "test_spring.war"
@@ -51,4 +51,7 @@ dependencies {
     
     implementation project(':module-admin-seguridad-server')
     implementation project(':module-authorization_server-oauth2')
+    
+    
+    implementation project(':module-gestion-geografia-server')
 }
