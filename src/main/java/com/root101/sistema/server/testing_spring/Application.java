@@ -16,11 +16,11 @@
  */
 package com.root101.sistema.server.testing_spring;
 
-import com.jhw.module.authorization_server.oauth2.A_ModuleOAuth2;
+import com.root101.module.authorization_server.oauth2.A_ModuleOAuth2;
 import com.root101.module.admin.seguridad.rest.A_ModuleAdminSeguridadRESTConfig;
 import com.root101.module.gestion.contabilidad.repo.utils.ResourcesContabilidad;
 import com.root101.module.gestion.contabilidad.rest.A_ModuleGestionContabilidadRESTConfig;
-import com.jhw.module.util.mysql.services.MySQLHandler;
+import com.root101.module.util.mysql.services.MySQLHandler;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import org.springframework.boot.SpringApplication;
@@ -50,8 +50,7 @@ import com.root101.module.gestion.geografia.rest.A_ModuleGestionGeografiaRESTCon
     A_ModuleOAuth2.BASE_PACKAGE,
     A_ModuleAdminSeguridadRESTConfig.BASE_PACKAGE,
     A_ModuleUtilLicenceRESTConfig.BASE_PACKAGE,
-    A_ModuleGestionGeografiaRESTConfig.BASE_PACKAGE,
-})
+    A_ModuleGestionGeografiaRESTConfig.BASE_PACKAGE,})
 @RestController
 @RequestMapping(value = "/admin")
 public class Application extends SpringBootServletInitializer {
